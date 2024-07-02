@@ -1,7 +1,6 @@
 const express = require('express');
 const port = 3005;
 const cors = require('cors');
-const axios = require('axios');
 const bodyParser = require('body-parser');
 const path = require('path');
 const app = express();
