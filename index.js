@@ -107,6 +107,14 @@ app.get('/search', async (req, res) => {
   });
 
 // Start the server
+app.get("/", (req, res) => {
+  return res.status(200).json({
+    message: "Server Running",
+    status: true,
+  });
+});
+
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
+;
